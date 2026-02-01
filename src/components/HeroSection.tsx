@@ -1,17 +1,17 @@
-import { useEffect, useState, useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
 import afsana6 from "@/assets/afsana-6.jpg";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
 
 export const HeroSection = ({ onContinue }: { onContinue: () => void }) => {
   const [displayedText, setDisplayedText] = useState("");
   const [showButton, setShowButton] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
-  
+
   const { scrollYProgress } = useScroll({
     target: sectionRef,
     offset: ["start end", "end start"],
   });
-  
+
   const glowIntensity = useTransform(scrollYProgress, [0, 0.5, 1], [0.3, 1, 0.3]);
 
   const fullText = "Tumhari tasveer dekh ke sirf chehra nahi, ehsaas yaad aata hai 🤍";
@@ -49,7 +49,7 @@ export const HeroSection = ({ onContinue }: { onContinue: () => void }) => {
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <motion.h1
           className="font-display text-6xl md:text-8xl lg:text-9xl text-foreground mb-8 animate-glow-pulse"
-          style={{ 
+          style={{
             opacity: glowIntensity,
             textShadow: "0 0 40px hsl(350 60% 50% / 0.5)"
           }}

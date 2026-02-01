@@ -1,8 +1,8 @@
-import { useRef } from "react";
-import { motion, useInView } from "framer-motion";
 import afsana2 from "@/assets/afsana-2.png";
 import afsana4 from "@/assets/afsana-4.jpg";
 import afsana7 from "@/assets/afsana-7.jpg";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
 export const MemoryCollage = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -19,14 +19,14 @@ export const MemoryCollage = () => {
             <motion.div
               key={idx}
               initial={{ opacity: 0, y: 40, rotate: idx === 1 ? 0 : idx === 0 ? -3 : 3 }}
-              animate={isInView ? { 
-                opacity: 1, 
-                y: 0, 
-                rotate: idx === 1 ? 0 : idx === 0 ? -3 : 3 
+              animate={isInView ? {
+                opacity: 1,
+                y: 0,
+                rotate: idx === 1 ? 0 : idx === 0 ? -3 : 3
               } : {}}
               transition={{ duration: 1, delay: idx * 0.2 }}
               className="relative aspect-[3/4] overflow-hidden rounded-2xl shadow-romantic animate-gentle-float"
-              style={{ 
+              style={{
                 animationDelay: `${idx * 0.5}s`,
                 animationDuration: `${4 + idx}s`
               }}

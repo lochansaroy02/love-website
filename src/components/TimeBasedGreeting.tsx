@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
 import afsana1 from "@/assets/afsana-1.jpg";
+import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 import { FloatingParticles } from "./FloatingParticles";
 
 export const TimeBasedGreeting = () => {
@@ -14,8 +14,6 @@ export const TimeBasedGreeting = () => {
       setGreeting({ text: "Good Afternoon, Afsana", emoji: "☀️" });
     } else if (hour >= 18 && hour < 21) {
       setGreeting({ text: "Good Evening, Afsana", emoji: "🌙" });
-    } else {
-      setGreeting({ text: "Good Night, Afsana", emoji: "✨" });
     }
   }, []);
 

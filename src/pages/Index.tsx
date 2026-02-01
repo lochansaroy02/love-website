@@ -1,16 +1,16 @@
-import { useRef } from "react";
-import { TimeBasedGreeting } from "@/components/TimeBasedGreeting";
+import { EndingSection } from "@/components/EndingSection";
+import { FinalQuestion } from "@/components/FinalQuestion";
+import { HeartReveal } from "@/components/HeartReveal";
 import { HeroSection } from "@/components/HeroSection";
-import { ScrollRevealImage } from "@/components/ScrollRevealImage";
 import { InteractiveQuestions } from "@/components/InteractiveQuestions";
 import { MemoryCollage } from "@/components/MemoryCollage";
+import { ScrollRevealImage } from "@/components/ScrollRevealImage";
 import { ShayariSection } from "@/components/ShayariSection";
-import { HeartReveal } from "@/components/HeartReveal";
-import { FinalQuestion } from "@/components/FinalQuestion";
-import { EndingSection } from "@/components/EndingSection";
+import { TimeBasedGreeting } from "@/components/TimeBasedGreeting";
+import { useRef } from "react";
 
 // Import images
-import afsana1 from "@/assets/afsana-1.jpg";
+import afsana2 from "@/assets/afsana-2.png";
 import afsana4 from "@/assets/afsana-4.jpg";
 import afsana7 from "@/assets/afsana-7.jpg";
 
@@ -20,7 +20,7 @@ const shayariData = [
     shayari: "Tum khamosh ho,\npar tumhari presence bohot bolti hai 🌙",
   },
   {
-    image: afsana1,
+    image: afsana2,
     shayari: "Tumhari simplicity hi tumhari sabse badi khoobsurti hai 🤍",
   },
   {

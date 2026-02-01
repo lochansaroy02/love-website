@@ -1,6 +1,6 @@
-import { useRef } from "react";
+import afsana3 from "@/assets/afsana-5.jpg";
 import { motion, useInView } from "framer-motion";
-import afsana3 from "@/assets/afsana-3.jpg";
+import { useRef } from "react";
 
 const shayaris = [
   "Main tumse ishq ka daawa nahi karta,\nBas itna maanta hoon\nke tum bohot khaas ho 🌙",
