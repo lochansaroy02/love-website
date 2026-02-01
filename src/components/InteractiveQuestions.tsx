@@ -1,11 +1,11 @@
-import { useState, useRef } from "react";
-import { motion, AnimatePresence, useInView } from "framer-motion";
 import afsana5 from "@/assets/afsana-5.jpg";
+import { AnimatePresence, motion, useInView } from "framer-motion";
+import { useRef, useState } from "react";
 
 const questions = [
   {
     question: "Ek personal sawal poochun?",
-    button: "Haan 🤍",
+    button: "Haan ❤️",
   },
   {
     question: "Kya tumhe lagta hai\nke kuch log bina koshish ke hi\ndil ke kareeb aa jaate hain?",
@@ -63,7 +63,7 @@ export const InteractiveQuestions = () => {
               <p className="font-elegant text-2xl md:text-3xl lg:text-4xl text-foreground leading-relaxed whitespace-pre-line mb-12">
                 {questions[currentQuestion].question}
               </p>
-              
+
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.98 }}
@@ -72,15 +72,14 @@ export const InteractiveQuestions = () => {
               >
                 {questions[currentQuestion].button}
               </motion.button>
-              
+
               {/* Progress dots */}
               <div className="flex justify-center gap-2 mt-10">
                 {questions.map((_, idx) => (
                   <div
                     key={idx}
-                    className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                      idx <= currentQuestion ? "bg-primary" : "bg-primary/30"
-                    }`}
+                    className={`w-2 h-2 rounded-full transition-all duration-300 ${idx <= currentQuestion ? "bg-primary" : "bg-primary/30"
+                      }`}
                   />
                 ))}
               </div>
@@ -92,7 +91,7 @@ export const InteractiveQuestions = () => {
               transition={{ duration: 0.8 }}
             >
               <p className="font-elegant text-2xl md:text-3xl lg:text-4xl text-foreground italic">
-                "Bas… meri feelings bhi kuch aisi hi hain 🤍"
+                "Bas… meri feelings bhi kuch aisi hi hain ❤️"
               </p>
             </motion.div>
           )}

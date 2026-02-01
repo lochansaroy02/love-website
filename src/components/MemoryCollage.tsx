@@ -51,7 +51,7 @@ export const MemoryCollage = () => {
           <p className="font-elegant text-xl md:text-2xl lg:text-3xl text-foreground/90 italic leading-relaxed">
             "Main tumhari tasveeron ko nahi,
             <br />
-            tumhari vibe ko yaad rakhta hoon 🤍"
+            tumhare ahsaas ko yaad rakhta hoon ❤️"
           </p>
         </motion.div>
       </div>

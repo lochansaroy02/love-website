@@ -1,7 +1,7 @@
-import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { TwinklingStars } from "./TwinklingStars";
+import { useRef } from "react";
 import { FallingPetals } from "./FallingPetals";
+import { TwinklingStars } from "./TwinklingStars";
 
 export const EndingSection = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -24,16 +24,16 @@ export const EndingSection = () => {
           transition={{ duration: 1, delay: 0.3 }}
           className="font-display text-3xl md:text-4xl lg:text-5xl text-foreground mb-8"
         >
-          Shukriya Afsana 🤍
+          Shukriya Afsana ❤️
         </motion.h2>
-        
+
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1, delay: 0.6 }}
           className="font-elegant text-xl md:text-2xl text-muted-foreground mb-16"
         >
-          Itna waqt dene ke liye
+          for everything....
         </motion.p>
 
         <motion.div
@@ -43,13 +43,11 @@ export const EndingSection = () => {
           className="space-y-6"
         >
           <div className="w-16 h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent mx-auto" />
-          
+
           <p className="font-elegant text-lg md:text-xl lg:text-2xl text-foreground/90 italic leading-relaxed">
-            "Mohabbat ko lafzon ki zarurat nahi hoti,
-            <br />
-            Bas niyat saaf honi chahiye 🤲✨"
+            only You are my Favorite Person❤️✨"
           </p>
-          
+
           <div className="w-16 h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent mx-auto" />
         </motion.div>
 
@@ -60,7 +58,7 @@ export const EndingSection = () => {
           className="mt-20"
         >
           <p className="text-muted-foreground/60 font-elegant text-sm">
-            Made with 🤍 for you
+            Made with ❤️ for you
           </p>
         </motion.div>
       </motion.div>

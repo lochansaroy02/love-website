@@ -14,7 +14,7 @@ export const HeroSection = ({ onContinue }: { onContinue: () => void }) => {
 
   const glowIntensity = useTransform(scrollYProgress, [0, 0.5, 1], [0.3, 1, 0.3]);
 
-  const fullText = "Tumhari tasveer dekh ke sirf chehra nahi, ehsaas yaad aata hai 🤍";
+  const fullText = "Tumhari tasveer dekh ke sirf chehra nahi, ehsaas yaad aata hai ❤️";
 
   useEffect(() => {
     let currentIndex = 0;
@@ -78,7 +78,7 @@ export const HeroSection = ({ onContinue }: { onContinue: () => void }) => {
             onClick={onContinue}
             className="px-8 py-4 bg-secondary/80 hover:bg-secondary text-foreground font-elegant text-lg rounded-full border border-primary/30 hover:border-primary/60 transition-all duration-500 hover:shadow-romantic"
           >
-            Dil ki baat aage padho 🤍
+            Dil ki baat aage padho ❤️
           </motion.button>
         )}
       </div>

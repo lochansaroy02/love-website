@@ -1,5 +1,5 @@
-import { useState, useRef } from "react";
-import { motion, AnimatePresence, useInView } from "framer-motion";
+import { AnimatePresence, motion, useInView } from "framer-motion";
+import { useRef, useState } from "react";
 
 export const FinalQuestion = () => {
   const [answered, setAnswered] = useState(false);
@@ -10,7 +10,7 @@ export const FinalQuestion = () => {
     <section ref={ref} className="min-h-screen flex items-center justify-center px-6 py-20 relative overflow-hidden">
       {/* Animated Gradient Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-romantic-wine/30 via-background to-romantic-night" />
-      <div 
+      <div
         className="absolute inset-0 opacity-30"
         style={{
           background: "radial-gradient(ellipse at 50% 50%, hsl(350 50% 25% / 0.4), transparent 70%)",
@@ -35,18 +35,18 @@ export const FinalQuestion = () => {
               <p className="font-elegant text-2xl md:text-3xl lg:text-4xl text-foreground leading-relaxed mb-12">
                 Afsana,
                 <br />
-                <span className="text-primary">agar tum kabhi chaaho</span>
+                <span className="text-primary">Hamesha aise hi rehna </span>
                 <br />
-                ke hum aur baat karein…
+                Kabhi change mat hona...
               </p>
-              
+
               <motion.button
                 whileHover={{ scale: 1.05, boxShadow: "0 0 40px hsl(350 60% 50% / 0.4)" }}
                 whileTap={{ scale: 0.98 }}
                 onClick={() => setAnswered(true)}
                 className="px-10 py-5 bg-primary/20 hover:bg-primary/30 text-foreground font-display text-lg md:text-xl rounded-full border border-primary/50 hover:border-primary transition-all duration-500"
               >
-                Kya hum ek nayi shuruaat kar sakte hain? 🤍
+                Okay naa ? ❤️
               </motion.button>
             </motion.div>
           ) : (
@@ -64,13 +64,13 @@ export const FinalQuestion = () => {
               >
                 💕
               </motion.div>
-              
+
               <p className="font-elegant text-2xl md:text-3xl text-foreground italic">
-                "Shayad yeh bas shuruaat hai..."
+                "You are so sweet ..."
               </p>
-              
+
               <p className="text-muted-foreground font-elegant text-lg">
-                Tumhara intezaar rahega 🌙
+                Haa main thoda pagal hu  😁
               </p>
             </motion.div>
           )}

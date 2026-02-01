@@ -17,15 +17,15 @@ import afsana7 from "@/assets/afsana-7.jpg";
 const shayariData = [
   {
     image: afsana7,
-    shayari: "Tum khamosh ho,\npar tumhari presence bohot bolti hai 🌙",
+    shayari: "Tumhare saath bitaya har ek pal \nMere liye sabse pyaara pal hai 🌙",
   },
   {
     image: afsana2,
-    shayari: "Tumhari simplicity hi tumhari sabse badi khoobsurti hai 🤍",
+    shayari: "Wo hath pakad ke market me ghumna, \nWo metro me kandhe pe sir rakh ke sona   ❤️",
   },
   {
     image: afsana4,
-    shayari: "Afsana,\ntumhe dekh ke yeh yakeen hota hai\nke sukoon bhi ek shakal hoti hai ✨",
+    shayari: "Aakhe Band krke wo pal fir se jee leta hu ✨",
   },
 ];
 

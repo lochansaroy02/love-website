@@ -2,10 +2,15 @@ import afsana3 from "@/assets/afsana-5.jpg";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
+
+
+
+
 const shayaris = [
-  "Main tumse ishq ka daawa nahi karta,\nBas itna maanta hoon\nke tum bohot khaas ho 🌙",
-  "Afsana,\ntumhari izzat meri mohabbat ka pehla rule hai 🤍",
-  "Tum meri aadat nahi,\nmeri dua ban chuki ho ✨",
+  "Tumhari Julfo Ki Gehrayi Hai Bahot, ",
+  "Aur Humko Pasand Nhi Aata Kinara ❤️",
+  "Log Kehte Hai Chand Ka Tukda Ho Tum 🌙",
+  "Hum Kehte Hai Chand Tukda Hai Tumhara.!!✨",
 ];
 
 export const ShayariSection = () => {

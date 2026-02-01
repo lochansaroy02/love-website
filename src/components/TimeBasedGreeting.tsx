@@ -9,11 +9,11 @@ export const TimeBasedGreeting = () => {
   useEffect(() => {
     const hour = new Date().getHours();
     if (hour >= 5 && hour < 12) {
-      setGreeting({ text: "Good Morning, Afsana", emoji: "🌸" });
+      setGreeting({ text: "Good Morning, Sana", emoji: "🌸" });
     } else if (hour >= 12 && hour < 18) {
-      setGreeting({ text: "Good Afternoon, Afsana", emoji: "☀️" });
+      setGreeting({ text: "Good Afternoon, Sana", emoji: "☀️" });
     } else if (hour >= 18 && hour < 21) {
-      setGreeting({ text: "Good Evening, Afsana", emoji: "🌙" });
+      setGreeting({ text: "Good Evening, Sana", emoji: "🌙" });
     }
   }, []);
 

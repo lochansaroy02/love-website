@@ -1,7 +1,7 @@
-import { useState, useRef } from "react";
-import { motion, AnimatePresence, useInView } from "framer-motion";
-import { Heart } from "lucide-react";
 import afsana6 from "@/assets/afsana-6.jpg";
+import { AnimatePresence, motion, useInView } from "framer-motion";
+import { Heart } from "lucide-react";
+import { useRef, useState } from "react";
 
 const heartMessages = [
   "Mujhe tumhari soch pasand hai",
@@ -19,7 +19,7 @@ export const HeartReveal = () => {
     if (!clickedHearts.includes(index)) {
       const newClicked = [...clickedHearts, index];
       setClickedHearts(newClicked);
-      
+
       if (newClicked.length === 3) {
         setTimeout(() => setRevealed(true), 800);
       }
@@ -46,7 +46,7 @@ export const HeartReveal = () => {
               <h2 className="font-display text-3xl md:text-4xl text-foreground mb-16">
                 Har dil mein ek raaz hai... 💫
               </h2>
-              
+
               <div className="flex justify-center gap-8 md:gap-16 mb-12">
                 {[0, 1, 2].map((idx) => (
                   <motion.button
@@ -59,13 +59,12 @@ export const HeartReveal = () => {
                   >
                     <Heart
                       size={60}
-                      className={`transition-all duration-500 ${
-                        clickedHearts.includes(idx)
-                          ? "fill-primary text-primary"
-                          : "text-primary/50 group-hover:text-primary"
-                      } ${clickedHearts.includes(idx) ? "animate-heart-beat" : ""}`}
+                      className={`transition-all duration-500 ${clickedHearts.includes(idx)
+                        ? "fill-primary text-primary"
+                        : "text-primary/50 group-hover:text-primary"
+                        } ${clickedHearts.includes(idx) ? "animate-heart-beat" : ""}`}
                     />
-                    
+
                     {/* Revealed message */}
                     <AnimatePresence>
                       {clickedHearts.includes(idx) && (
@@ -84,7 +83,7 @@ export const HeartReveal = () => {
                   </motion.button>
                 ))}
               </div>
-              
+
               <p className="text-muted-foreground font-elegant text-lg mt-20">
                 Har dil pe click karo ✨
               </p>
@@ -111,7 +110,7 @@ export const HeartReveal = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
               </motion.div>
-              
+
               {/* Final Message */}
               <motion.p
                 initial={{ opacity: 0 }}
@@ -119,9 +118,7 @@ export const HeartReveal = () => {
                 transition={{ duration: 1, delay: 0.8 }}
                 className="font-elegant text-xl md:text-2xl lg:text-3xl text-foreground italic leading-relaxed"
               >
-                "Main tumse bohot izzat ke saath
-                <br />
-                mohabbat karta hoon, Afsana 🤍"
+                "I love You so much ❤️"
               </motion.p>
             </motion.div>
           )}
