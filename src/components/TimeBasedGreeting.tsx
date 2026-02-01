@@ -14,6 +14,8 @@ export const TimeBasedGreeting = () => {
       setGreeting({ text: "Good Afternoon, Sana", emoji: "☀️" });
     } else if (hour >= 18 && hour < 21) {
       setGreeting({ text: "Good Evening, Sana", emoji: "🌙" });
+    } else {
+      setGreeting({ text: "Good Evening, Sana", emoji: "🌙" });
     }
   }, []);
 
